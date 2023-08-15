@@ -97,3 +97,48 @@
         font-size: 24px;
     }
 }
+
+//------------ABOUT-----------
+
+.about {
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img {
+        max-width: 570px;
+    }
+}
+
+.about-content div {
+    //aqui digo pra os componentes se adequarem ao tamanho dentro da div
+    flex: 1;
+}
+
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%; //espaco entre uma linha e outra
+    }
+}
+
+@media screen and (max-width: 768px) {  //lembrar de sempre separar o and dos parenteses
+    .about-content {
+        flex-direction: column;
+    }
+}
+
+//----------------------
